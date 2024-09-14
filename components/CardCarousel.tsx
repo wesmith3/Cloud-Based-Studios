@@ -15,7 +15,7 @@ export function CardCarousel() {
   ));
 
   return (
-    <div className="w-full h-full py-20 bg-black">
+    <div id="projects" className="w-full h-full py-20 bg-black">
       <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-white/[.75] dark:text-neutral-200 font-serif">
         Our
         <span className="text-dustyBrown font-French font-bold">Projects</span>
