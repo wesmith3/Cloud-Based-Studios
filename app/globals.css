@@ -2,32 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: "Cinema";
+  src: url("../public/fonts/CinemaGroovyRegular-d9W1g.otf")
+  format("opentype");
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+  font-family: "Fancy";
+  src: url("../public/fonts/FancyGlowPersonalUse-2OR0o.otf")
+  format("opentype");
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@font-face {
+  font-family: "French";
+  src: url("../public/fonts/FhaNicholsonFrenchNcvNormal-YgXy.otf")
+  format("opentype");
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+@font-face {
+  font-family: "Film";
+  src: url("../public/fonts/Filmgraph-nRWyY.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noir";
+  src: url("../public/fonts/FilmNoir-6YY8v.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Thin";
+  src: url("../public/fonts/PromenadedelacroisetteReg-BWLLG.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: "SF";
+  src: url("../public/fonts/SfMoviePosterCondensedBold-vRZD.ttf")
+    format("opentype");
 }
