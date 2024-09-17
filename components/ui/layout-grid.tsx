@@ -8,7 +8,7 @@ type Card = {
   id: number;
   content: JSX.Element | React.ReactNode | string;
   className: string;
-  thumbnail: string;
+  src: string;
 };
 
 export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
@@ -61,16 +61,20 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
 
 const ImageComponent = ({ card }: { card: Card }) => {
   return (
-    <motion.img
+    <motion.div
       layoutId={`image-${card.id}-image`}
-      src={card.thumbnail}
-      height="500"
-      width="500"
-      className={cn(
-        "object-cover object-top absolute inset-0 h-full w-full transition duration-200"
-      )}
-      alt="thumbnail"
-    />
+      className="relative w-full h-full"
+    >
+      <Image
+        src={card.src}
+        layout="fill"
+        objectFit="cover"
+        className={cn(
+          "absolute inset-0 transition duration-200"
+        )}
+        alt="thumbnail"
+      />
+    </motion.div>
   );
 };
 
