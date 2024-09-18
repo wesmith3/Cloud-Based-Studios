@@ -28,7 +28,7 @@ export function Bento() {
             description={item.description}
             header={item.header}
             icon={item.icon}
-            className={i === 0 || i === 3 ? "md:col-span-3" : ""}
+            className={i === 0 || i === 3 ? "md:col-span-2" : ""}
           />
         ))}
       </BentoGrid>
@@ -56,12 +56,6 @@ const items = [
     icon: <IconVideo className="h-8 w-4 text-neutral-500" />,
   },
   {
-    title: "Photography Sessions",
-    description: "Dive into the transformative power of technology.",
-    header: <ImageBg src="/services/Photo.jpg" />,
-    icon: <IconCamera className="h-4 w-4 text-neutral-500" />,
-  },
-  {
     title: "Podcast Productions",
     description: "Discover the beauty of thoughtful and functional design.",
     header: <ImageBg src="/services/Podcast.jpg" />,
@@ -72,5 +66,11 @@ const items = [
     description: "Understand the impact of effective communication in our lives.",
     header: <ImageBg src="/services/Website.jpg" />,
     icon: <IconDeviceDesktop className="h-4 w-4 text-neutral-500" />,
+  },
+  {
+    title: "Photography Sessions",
+    description: "Dive into the transformative power of technology.",
+    header: <ImageBg src="/services/Photo.jpg" />,
+    icon: <IconCamera className="h-4 w-4 text-neutral-500" />,
   },
 ];

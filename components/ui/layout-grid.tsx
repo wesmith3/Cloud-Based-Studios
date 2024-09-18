@@ -34,7 +34,7 @@ const ImageComponent = ({ card }: { card: Card }) => {
         layout="fill"
         objectFit="cover"
         className={cn(
-          "absolute inset-0 transition duration-200"
+          "absolute inset-0 transition rounded duration-200"
         )}
         alt="thumbnail"
       />
