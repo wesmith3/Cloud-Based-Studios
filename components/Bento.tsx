@@ -15,10 +15,9 @@ import Image from "next/image";
 export function Bento() {
   return (
     <div className="bg-black pt-36 pb-20">
-      <h2 className="max-w-7xl pl-4 mx-auto pb-5 text-xl md:text-5xl font-bold text-white/[.75] dark:text-neutral-200 font-serif">
-        What
-        <span className="text-dustyBrown font-French font-bold">we</span>CanDoFor 
-        <span className="text-dustyBrown font-French font-bold">You</span>
+      <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-3xl font-bold text-white/[.75] dark:text-neutral-200 font-serif">
+        OUR
+        <span className="text-dustyBrown md:text-5xl font-French font-bold">Services</span>
       </h2>
 
       <BentoGrid className="max-w-6xl mx-auto bg-black">
@@ -29,7 +28,7 @@ export function Bento() {
             description={item.description}
             header={item.header}
             icon={item.icon}
-            className={i === 0 || i === 3 ? "md:col-span-3" : ""}
+            className={i === 0 || i === 3 ? "md:col-span-2" : ""}
           />
         ))}
       </BentoGrid>
@@ -57,12 +56,6 @@ const items = [
     icon: <IconVideo className="h-8 w-4 text-neutral-500" />,
   },
   {
-    title: "Photography Sessions",
-    description: "Dive into the transformative power of technology.",
-    header: <ImageBg src="/services/Photo.jpg" />,
-    icon: <IconCamera className="h-4 w-4 text-neutral-500" />,
-  },
-  {
     title: "Podcast Productions",
     description: "Discover the beauty of thoughtful and functional design.",
     header: <ImageBg src="/services/Podcast.jpg" />,
@@ -73,5 +66,11 @@ const items = [
     description: "Understand the impact of effective communication in our lives.",
     header: <ImageBg src="/services/Website.jpg" />,
     icon: <IconDeviceDesktop className="h-4 w-4 text-neutral-500" />,
+  },
+  {
+    title: "Photography Sessions",
+    description: "Dive into the transformative power of technology.",
+    header: <ImageBg src="/services/Photo.jpg" />,
+    icon: <IconCamera className="h-4 w-4 text-neutral-500" />,
   },
 ];
