@@ -15,10 +15,9 @@ import Image from "next/image";
 export function Bento() {
   return (
     <div className="bg-black pt-36 pb-20">
-      <h2 className="max-w-7xl pl-4 mx-auto pb-5 text-xl md:text-5xl font-bold text-white/[.75] dark:text-neutral-200 font-serif">
-        What
-        <span className="text-dustyBrown font-French font-bold">we</span>CanDoFor 
-        <span className="text-dustyBrown font-French font-bold">You</span>
+      <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-3xl font-bold text-white/[.75] dark:text-neutral-200 font-serif">
+        OUR
+        <span className="text-dustyBrown md:text-5xl font-French font-bold">Services</span>
       </h2>
 
       <BentoGrid className="max-w-6xl mx-auto bg-black">
