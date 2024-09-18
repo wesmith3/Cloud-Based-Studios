@@ -19,6 +19,7 @@ export function CardCarousel() {
       <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-3xl font-bold text-white/[.75] dark:text-neutral-200 font-serif">
         OUR
         <span className="text-dustyBrown md:text-5xl font-French font-bold">Projects</span>
+        <span className="md:text-xl">(COMING SOON)</span>
       </h2>
       <Carousel items={cards} />
     </div>
