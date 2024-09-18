@@ -6,10 +6,9 @@ import chelan from "../public/test.jpg"
 export function Grid() {
   return (
     <div className="h-screen py-1 w-full bg-black">
-        <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-white/[.75] dark:text-neutral-200 font-serif">
-        <span className="text-dustyBrown font-French font-bold">Light</span>
-        &
-        <span className="text-dustyBrown font-French font-bold">Lens</span>
+        <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-2xl font-bold text-white/[.75] dark:text-neutral-200 font-serif">
+        <span className="text-dustyBrown md:text-5xl font-French font-bold">Image</span>
+        GALLERY
       </h2>
 
       <LayoutGrid cards={cards} />
