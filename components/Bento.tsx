@@ -11,6 +11,7 @@ import {
   IconVideo,
 } from "@tabler/icons-react";
 import Image from "next/image";
+import { Button } from "semantic-ui-react";
 
 export function Bento() {
   return (
@@ -32,6 +33,11 @@ export function Bento() {
           />
         ))}
       </BentoGrid>
+
+      <div>
+        <Button className="bg-white"/>
+      </div>
+
     </div>
   );
 }
