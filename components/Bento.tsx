@@ -34,7 +34,7 @@ export function Bento() {
         ))}
       </BentoGrid>
 
-      <div>
+      <div className="justify-center items-center mr-auto ml-auto">
         <Button className="bg-white"/>
       </div>
 
