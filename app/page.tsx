@@ -1,3 +1,4 @@
+"use client"
 import { Bento } from "@/components/Bento";
 import { CardCarousel } from "@/components/CardCarousel";
 import Footer from "@/components/Footer";
