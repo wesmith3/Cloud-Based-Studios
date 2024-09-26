@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <main className="">
       <div className="overflow-auto">
-        {/* <Navbar /> */}
+        <Navbar />
        <Hero />
        <CardCarousel />
        <Grid />
