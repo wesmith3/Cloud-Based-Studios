@@ -15,7 +15,7 @@ import { Button } from "semantic-ui-react";
 
 export function Bento() {
   return (
-    <div className="bg-black pt-36 pb-20" id="#services">
+    <div className="bg-white pt-36 pb-20" id="#services">
       <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-3xl font-bold text-white/[.75] dark:text-neutral-200 font-serif">
         OUR
         <span className="text-dustyBrown md:text-5xl font-French font-bold">Services</span>
