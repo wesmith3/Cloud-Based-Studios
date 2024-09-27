@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import React from "react";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
 import desperado from "../public/projects/desperado.jpeg"
@@ -11,7 +10,7 @@ import pizza from "../public/projects/pizza.jpg"
 
 export function CardCarousel() {
   const cards = data.map((card, index) => (
-    <Card key={card.id} card={card} index={index} />
+    <Card key={card.id} card={card} />
   ));
 
   return (

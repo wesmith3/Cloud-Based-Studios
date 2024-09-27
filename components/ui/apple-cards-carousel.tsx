@@ -10,7 +10,7 @@ import {
 } from "@tabler/icons-react";
 import { cn } from "../../utils/cn";
 import { motion } from "framer-motion";
-import Image, { ImageProps } from "next/image";
+import Image, { ImageProps, StaticImageData } from "next/image";
 
 interface CarouselProps {
   items: JSX.Element[];
@@ -18,7 +18,7 @@ interface CarouselProps {
 }
 
 type Card = {
-  src: string;
+  src: string | StaticImageData;
   title: string;
   category: string;
 };
@@ -153,7 +153,6 @@ export const Card = ({
   layout = false,
 }: {
   card: Card;
-  index: number;
   layout?: boolean;
 }) => {
 
