@@ -4,8 +4,8 @@ import { LayoutGrid } from "./ui/layout-grid";
 
 export function Grid() {
   return (
-    <div className="h-screen py-1 w-full bg-black" id="#portfolio">
-        <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-2xl font-bold text-white/[.75] dark:text-neutral-200 font-serif">
+    <div className="h-screen py-1 w-full bg-white" id="#portfolio">
+        <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-2xl font-bold text-black/[.75] dark:text-neutral-200 font-serif">
         <span className="text-dustyBrown md:text-5xl font-French font-bold">Image</span>
         GALLERY
       </h2>
