@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import React from "react";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
 import desperado from "../public/projects/desperado.jpeg"
@@ -11,7 +10,7 @@ import pizza from "../public/projects/pizza.jpg"
 
 export function CardCarousel() {
   const cards = data.map((card, index) => (
-    <Card key={card.id} card={card} index={index} />
+    <Card key={card.id} card={card} />
   ));
 
   return (
@@ -47,7 +46,78 @@ const data = [
     title: "Alone.",
     src: astronaut,
   },
-
+  {
+    id: 4,
+    category: "Drama/Thriller",
+    title: "Last Night on Earth.",
+    src: EndOfTheWorld,
+  },
+  {
+    id: 5,
+    category: "Horror/Slasher",
+    title: "Pizza Purgatory.",
+    src: pizza,
+  },
+  {
+    id: 6,
+    category: "Western/Drama",
+    title: "Desperado.",
+    src: desperado,
+  },
+  {
+    id: 1,
+    category: "Thriller",
+    title: "Siri Miri.",
+    src: woods,
+  },
+  {
+    id: 2,
+    category: "Action",
+    title: "Mirage.",
+    src: dune,
+  },
+  {
+    id: 3,
+    category: "SciFi/Horror",
+    title: "Alone.",
+    src: astronaut,
+  },
+  {
+    id: 4,
+    category: "Drama/Thriller",
+    title: "Last Night on Earth.",
+    src: EndOfTheWorld,
+  },
+  {
+    id: 5,
+    category: "Horror/Slasher",
+    title: "Pizza Purgatory.",
+    src: pizza,
+  },
+  {
+    id: 6,
+    category: "Western/Drama",
+    title: "Desperado.",
+    src: desperado,
+  },
+  {
+    id: 1,
+    category: "Thriller",
+    title: "Siri Miri.",
+    src: woods,
+  },
+  {
+    id: 2,
+    category: "Action",
+    title: "Mirage.",
+    src: dune,
+  },
+  {
+    id: 3,
+    category: "SciFi/Horror",
+    title: "Alone.",
+    src: astronaut,
+  },
   {
     id: 4,
     category: "Drama/Thriller",

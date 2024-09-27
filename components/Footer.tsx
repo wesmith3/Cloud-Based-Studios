@@ -22,7 +22,7 @@ function Footer() {
                 <List link inverted>
                   <List.Item as="a">Sitemap</List.Item>
                   <List.Item as="a">Contact Us</List.Item>
-                  <List.Item as="a">FAQ's</List.Item>
+                  <List.Item as="a">FAQ&apos;s</List.Item>
                   <List.Item as="a">
                     Back to the Top
                   </List.Item>
